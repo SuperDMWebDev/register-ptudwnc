@@ -1,0 +1,18 @@
+extends layout
+
+mixin message(username, fullname)
+    
+    h1.greeting username 
+        span=username
+    h1.greeting fullname 
+        span=fullname
+    a(href="/loggout" class="loggout-link") log out
+    //- li(style="float: right;")
+    //-     a(href="/loggout") Loggout 
+    //-opp =0 use is login
+    //-
+
+block content
+    .dashboard 
+        .user 
+            +message(username, fullname)
