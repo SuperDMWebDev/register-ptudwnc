@@ -4,10 +4,11 @@ const { connect } = require("http2");
 
 const pool = mysql.createPool({
   connectionLimit: 10,
-  host: "localhost",
-  user: "root",
-  password: "123456",
-  database: "registerdb",
+  host: "sql6.freemysqlhosting.net",
+  user: "sql6529248",
+  password: "VFSFDA977U",
+  database: "sql6529248",
+  port: 3306,
 });
 
 pool.getConnection((err, connection) => {
